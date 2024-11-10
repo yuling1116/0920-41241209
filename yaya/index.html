@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>剪刀石頭布遊戲</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 套件 -->
+</head>
+<body>
+    <div class="container">
+        <h1>剪刀石頭布遊戲</h1>
+        <div class="choices">
+            <button onclick="playGame('剪刀')" onmouseover="hoverEffect(this, 'hover')" onmouseout="hoverEffect(this, 'normal')">
+                <img src="img/3.png" alt="剪刀">
+            </button>
+            <button onclick="playGame('石頭')" onmouseover="hoverEffect(this, 'hover')" onmouseout="hoverEffect(this, 'normal')">
+                <img src="img/2.png" alt="石頭">
+            </button>
+            <button onclick="playGame('布')" onmouseover="hoverEffect(this, 'hover')" onmouseout="hoverEffect(this, 'normal')">
+                <img src="img/1.png" alt="布">
+            </button>
+        </div>
+        <div class="result">
+            <p id="userChoice">你的選擇: </p>
+            <p id="computerChoice">電腦的選擇: </p>
+            <p id="gameResult">結果: </p>
+        </div>
+        <p id="score">玩家勝利: 0 次，電腦勝利: 0 次</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
